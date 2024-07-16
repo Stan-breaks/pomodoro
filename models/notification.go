@@ -1,5 +1,6 @@
 package models
 
 type Notification struct {
-	Message string
+	Message  string
+	IconPath string
 }
