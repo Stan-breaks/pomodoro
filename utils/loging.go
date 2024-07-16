@@ -14,7 +14,7 @@ func Log(log models.Log) {
 	}
 
 	defer file.Close()
-	_, err = file.WriteString(log.Date + "-" + log.Message + "\n")
+	_, err = file.WriteString(log.Date + " " + log.Message + "\n")
 	if err != nil {
 		fmt.Println("Error writing to file:", err)
 		return
