@@ -33,7 +33,6 @@ func main() {
 			Filepath: logFile,
 			Date:     date,
 		}
-    utils.Clear()
 		utils.Notify(startNotification)
 		utils.Log(startLog)
 		utils.Count(workCountDown)
