@@ -11,7 +11,8 @@ func Count(countDown models.CountDown) {
 	for i := (countDown.Minutes * 60) + countDown.Seconds; i >= 0; i-- {
 		minutes := i / 60
 		seconds := i % 60
-		fmt.Printf("\r %02d:%02d", minutes, seconds)
+		fmt.Printf("\r%02d:%02d", minutes, seconds)
 		time.Sleep(1 * time.Second)
 	}
+	fmt.Printf("\n\n")
 }
