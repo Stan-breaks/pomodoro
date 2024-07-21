@@ -1,0 +1,22 @@
+[
+  {
+    "activity": "walk",
+    "minutes": 0,
+    "seconds": 30
+  },
+  {
+    "activity": "read",
+    "minutes": 0,
+    "seconds": 30
+  },
+  {
+    "activity": "code",
+    "minutes": 0,
+    "seconds": 30
+  },
+  {
+    "activity": "sleep",
+    "minutes": 0,
+    "seconds": 30
+  }
+]

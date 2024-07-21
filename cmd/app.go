@@ -44,8 +44,15 @@ func App() {
 			if homePointer < 5 {
 				homePointer++
 			}
-    case 13, 10:
-    routes.HandleRoutes(homePointer)
+		case 13, 10:
+			if homePointer == 5 {
+				return
+			}
+
+			os.Stdout.Write([]byte("\033[H\033[2J\r\n"))
+			// clear the screen
+			os.Stdout.Write([]byte(string(homePointer)))
+			routes.HandleRoutes(homePointer)
 		}
 	}
 }

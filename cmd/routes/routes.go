@@ -1,7 +1,7 @@
 package routes
 
 import (
-	"os"
+	//	"os"
 	"pomo/cmd/models"
 	"pomo/cmd/utils"
 	"time"
@@ -18,9 +18,9 @@ func HandleRoutes(opt int) {
 			Date:    currentTime.Format("2006-01-02 15:04:05"),
 		}
 		utils.Count(countDown)
-	default:
-
-		os.Stdout.Write([]byte("\033[H\033[2J\r\n")) // clear the screen
-  os.Stdout.Write([]byte("Under Construstion...\r\n"))
+	case 1:
+		utils.LoadSchedule()
+	case 2:
+		utils.Edit()
 	}
 }
