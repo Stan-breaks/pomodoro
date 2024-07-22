@@ -3,7 +3,6 @@ package cmd
 import (
 	"fmt"
 	"os"
-	"pomo/cmd/routes"
 	"pomo/cmd/utils"
 
 	"golang.org/x/term"
@@ -51,8 +50,7 @@ func App() {
 
 			os.Stdout.Write([]byte("\033[H\033[2J\r\n"))
 			// clear the screen
-			os.Stdout.Write([]byte(string(homePointer)))
-			routes.HandleRoutes(homePointer)
+			HandleRoutes(homePointer)
 		}
 	}
 }

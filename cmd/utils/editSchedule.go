@@ -42,12 +42,18 @@ func Edit() {
 			if editPointer < len(items)-1 {
 				editPointer++
 			}
-		case 13, 10:
-			if editPointer == 5 {
-				return
-			}
+		case 'a':
 			os.Stdout.Write([]byte("\033[H\033[2J\r\n"))
-			routes.HandleEdit(editPointer)
+			routes.AddItem(editPointer, customizeFile, items)
+			return
+		case 'd', 'D':
+			os.Stdout.Write([]byte("\033[H\033[2J\r\n"))
+			routes.DeleteItem(editPointer, customizeFile)
+			return
+		case 'l', 'L':
+			os.Stdout.Write([]byte("\033[H\033[2J\r\n"))
+			routes.AddToList(customizeFile)
+			return
 		}
 	}
 
