@@ -1,8 +1,6 @@
 package routes
 
-import (
-	"os"
-)
+import ()
 
 func DeleteItem(pointer int, file string) {
 	return
