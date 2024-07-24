@@ -48,7 +48,7 @@ func Edit() {
 			return
 		case 'd', 'D':
 			os.Stdout.Write([]byte("\033[H\033[2J\r\n"))
-			routes.DeleteItem(editPointer, customizeFile)
+			routes.DeleteItem(editPointer, customizeFile, items)
 			return
 		case 'l', 'L':
 			os.Stdout.Write([]byte("\033[H\033[2J\r\n"))
