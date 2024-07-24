@@ -31,7 +31,7 @@ func AddItem(pointer int, file string, items []models.ScheduleItem) {
 			}
 			switch b[0] {
 			case 13, 10:
-				continue
+				goto nextField
 			case 27:
 				return
 			case 127, 8:
@@ -68,6 +68,7 @@ func AddItem(pointer int, file string, items []models.ScheduleItem) {
 			}
 
 		}
+	nextField:
 	}
 	intMinutes, err := strconv.Atoi(minutes)
 	if err != nil {
