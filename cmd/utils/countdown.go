@@ -16,6 +16,13 @@ func Count(countDown models.CountDown) {
 	ticker := time.NewTicker(1 * time.Second)
 	defer ticker.Stop()
 	totalSeconds := (countDown.Minutes * 60) + countDown.Seconds
+	logFile := "/home/stan/projects/goProjects/pomodoro/test.log"
+	startLog := models.Log{
+		Filepath: logFile,
+		Message:  countDown.Message,
+		Date:     countDown.Date,
+	}
+	Log(startLog)
 	for range ticker.C {
 		os.Stdout.Write([]byte(countDown.Message + " at " + countDown.Date + "\r\n"))
 		if totalSeconds < 0 {
@@ -53,4 +60,10 @@ func Count(countDown models.CountDown) {
 		totalSeconds--
 	}
 	os.Stdout.Write([]byte("\r\n\r\n"))
+	endLog := models.Log{
+		Filepath: logFile,
+		Message:  strings.Split(countDown.Message, " ")[0] + " ended",
+		Date:     time.Now().Format("2006-01-02 15:04:05"),
+	}
+	Log(endLog)
 }
