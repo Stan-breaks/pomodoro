@@ -7,7 +7,7 @@ import (
 	"strconv"
 )
 
-func AddItem(pointer int, file string, items []models.ScheduleItem) {
+func EditItem(pointer int, items []models.ScheduleItem, file string) {
 	name := ""
 	minutes := ""
 	seconds := ""
@@ -89,7 +89,6 @@ func AddItem(pointer int, file string, items []models.ScheduleItem) {
 	for i, item := range items {
 		if i == pointer {
 			newItems = append(newItems, newItem)
-			newItems = append(newItems, item)
 		} else {
 			newItems = append(newItems, item)
 		}
@@ -104,4 +103,5 @@ func AddItem(pointer int, file string, items []models.ScheduleItem) {
 		os.Stdout.Write([]byte("Error with writing to file"))
 		return
 	}
+
 }

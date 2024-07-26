@@ -2,10 +2,9 @@ package cmd
 
 import (
 	"fmt"
+	"golang.org/x/term"
 	"os"
 	"pomo/cmd/utils"
-
-	"golang.org/x/term"
 )
 
 func App() {

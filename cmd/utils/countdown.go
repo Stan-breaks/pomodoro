@@ -19,12 +19,12 @@ func Count(countDown models.CountDown) {
 	logFile := "/home/stan/projects/goProjects/pomodoro/test.log"
 	startLog := models.Log{
 		Filepath: logFile,
-		Message:  countDown.Message,
+		Message:  countDown.Message + " started",
 		Date:     countDown.Date,
 	}
 	Log(startLog)
 	for range ticker.C {
-		os.Stdout.Write([]byte(countDown.Message + " at " + countDown.Date + "\r\n"))
+		os.Stdout.Write([]byte(countDown.Message + " started at " + countDown.Date + "\r\n"))
 		if totalSeconds < 0 {
 			break
 		}
@@ -62,7 +62,7 @@ func Count(countDown models.CountDown) {
 	os.Stdout.Write([]byte("\r\n\r\n"))
 	endLog := models.Log{
 		Filepath: logFile,
-		Message:  strings.Split(countDown.Message, " ")[0] + " ended",
+		Message:  countDown.Message + " ended",
 		Date:     time.Now().Format("2006-01-02 15:04:05"),
 	}
 	Log(endLog)
