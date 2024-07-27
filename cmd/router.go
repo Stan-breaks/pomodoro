@@ -1,6 +1,7 @@
 package cmd
 
 import (
+	"os"
 	"pomo/cmd/models"
 	"pomo/cmd/utils"
 	"time"
@@ -22,6 +23,7 @@ func HandleRoutes(opt int) {
 	case 2:
 		utils.Edit()
 	case 3:
+		os.Stdout.Sync()
 		utils.SeeLogs()
 	case 4:
 

@@ -59,5 +59,5 @@ func Edit() {
 			routes.EditItem(editPointer, items, customizeFile)
 		}
 	}
-
+	os.Stdout.Sync()
 }

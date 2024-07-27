@@ -66,4 +66,5 @@ func Count(countDown models.CountDown) {
 		Date:     time.Now().Format("2006-01-02 15:04:05"),
 	}
 	Log(endLog)
+	os.Stdout.Sync()
 }
