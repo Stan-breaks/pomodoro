@@ -25,12 +25,12 @@ Use the arrow keys to navigate the menu and press Enter to select an option.
 
 ## Menu Options
 
-- 1. Start a new timer
-- 2. Load scheduler
-- 3. Edit scheduler
-- 4. See your logs
-- 5. Analysis
-- 6. Exit
+1. Start a new timer
+2. Load scheduler
+3. Edit scheduler
+4. See your logs
+5. Analysis
+6. Exit
 
 ## ASCII Countdown
 
@@ -50,8 +50,9 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 To set up the development environment:
 
-1. Clone the repository `git clone https://github.com/yourusername/pomo.git` 2. Navigate to the project directory `cd pomo` 3. Install
-   dependencies `go mod tidy`
+1. Clone the repository `git clone https://github.com/yourusername/pomo.git` 2.
+   Navigate to the project directory `cd pomo` 3. Install dependencies `go mod
+tidy`
 
 ## Future Enhancements
 
