@@ -1,7 +1,7 @@
 package main
 
 import (
-	"pomo/cmd"
+	"github.com/Stan-breaks/pomo/cmd"
 )
 
 func main() {

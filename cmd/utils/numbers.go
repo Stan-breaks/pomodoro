@@ -1,6 +1,6 @@
 package utils
 
-import "pomo/cmd/models"
+import "github.com/Stan-breaks/pomo/cmd/models"
 
 var Colon = `
  ___    

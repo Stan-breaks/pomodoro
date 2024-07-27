@@ -2,8 +2,8 @@ package utils
 
 import (
 	"fmt"
+	"github.com/Stan-breaks/pomo/cmd/models"
 	"os/exec"
-	"pomo/cmd/models"
 )
 
 func Notify(notification models.Notification) {

@@ -2,8 +2,8 @@ package routes
 
 import (
 	"encoding/json"
+	"github.com/Stan-breaks/pomo/cmd/models"
 	"os"
-	"pomo/cmd/models"
 )
 
 func DeleteItem(pointer int, file string, items []models.ScheduleItem) {

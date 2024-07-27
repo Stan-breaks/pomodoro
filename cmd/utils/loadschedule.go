@@ -2,8 +2,8 @@ package utils
 
 import (
 	"encoding/json"
+	"github.com/Stan-breaks/pomo/cmd/models"
 	"os"
-	"pomo/cmd/models"
 	"time"
 )
 

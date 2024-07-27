@@ -2,9 +2,9 @@ package utils
 
 import (
 	"encoding/json"
+	"github.com/Stan-breaks/pomo/cmd/models"
+	"github.com/Stan-breaks/pomo/cmd/routes"
 	"os"
-	"pomo/cmd/models"
-	"pomo/cmd/routes"
 )
 
 func Edit() {
@@ -59,5 +59,4 @@ func Edit() {
 			routes.EditItem(editPointer, items, customizeFile)
 		}
 	}
-	os.Stdout.Sync()
 }

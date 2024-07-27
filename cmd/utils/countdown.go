@@ -2,8 +2,8 @@ package utils
 
 import (
 	"fmt"
+	"github.com/Stan-breaks/pomo/cmd/models"
 	"os"
-	"pomo/cmd/models"
 	"strconv"
 	"strings"
 	"time"

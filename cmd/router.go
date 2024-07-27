@@ -1,9 +1,10 @@
 package cmd
 
 import (
+	"github.com/Stan-breaks/pomo/cmd/models"
 	"os"
-	"pomo/cmd/models"
-	"pomo/cmd/utils"
+
+	"github.com/Stan-breaks/pomo/cmd/utils"
 	"time"
 )
 
