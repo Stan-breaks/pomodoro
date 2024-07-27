@@ -1,4 +1,4 @@
-module pomo
+module github/Stan-breaks/pomo
 
 go 1.22.3
 
