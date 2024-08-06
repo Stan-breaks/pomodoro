@@ -57,6 +57,7 @@ func Edit() {
 		case 'e':
 			os.Stdout.Write([]byte("\033[H\033[2J\r\n"))
 			routes.EditItem(editPointer, items, customizeFile)
+			return
 		}
 	}
 }
