@@ -2,7 +2,7 @@ package utils
 
 import (
 	"fmt"
-	"github.com/Stan-breaks/pomo/cmd/models"
+	"github.com/Stan-breaks/pomodoro/cmd/models"
 	"os"
 )
 

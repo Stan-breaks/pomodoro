@@ -1,4 +1,4 @@
-module github.com/Stan-breaks/pomo
+module github.com/Stan-breaks/pomodoro
 
 go 1.22.3
 

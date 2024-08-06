@@ -2,7 +2,7 @@ package cmd
 
 import (
 	"fmt"
-	"github.com/Stan-breaks/pomo/cmd/utils"
+	"github.com/Stan-breaks/pomodoro/cmd/utils"
 	"golang.org/x/term"
 	"os"
 )
@@ -39,11 +39,11 @@ func App() {
 				homePointer--
 			}
 		case 66:
-			if homePointer < 5 {
+			if homePointer < 3 {
 				homePointer++
 			}
 		case 13, 10:
-			if homePointer == 5 {
+			if homePointer == 3 {
 				return
 			}
 

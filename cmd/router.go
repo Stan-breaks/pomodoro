@@ -1,10 +1,8 @@
 package cmd
 
 import (
-	"github.com/Stan-breaks/pomo/cmd/models"
-	"os"
-
-	"github.com/Stan-breaks/pomo/cmd/utils"
+	"github.com/Stan-breaks/pomodoro/cmd/models"
+	"github.com/Stan-breaks/pomodoro/cmd/utils"
 	"time"
 )
 
@@ -23,10 +21,6 @@ func HandleRoutes(opt int) {
 		utils.LoadSchedule()
 	case 2:
 		utils.Edit()
-	case 3:
-		os.Stdout.Sync()
-		utils.SeeLogs()
-	case 4:
 
 	}
 }

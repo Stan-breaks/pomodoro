@@ -13,7 +13,7 @@ Pomo is an open-source command-line tool designed to help you manage your time e
 
 ## Installation
 
-`go get github.com/Stan-breaks/pomo`
+`go get github.com/Stan-breaks/pomodoro`
 
 ## Usage
 
@@ -21,22 +21,23 @@ Run the following command in your terminal:
 
 `pomo`
 
-Use the arrow keys to navigate the menu and press Enter to select an option.
+Use the arrow keys to navigate the menu and press
+Enter to select an option.
 
 ## Menu Options
 
 1. Start a new timer
 2. Load scheduler
-3. Edit scheduler
-4. See your logs
-5. Analysis
-6. Exit
+3. Edit
+4. Exit
 
 ## ASCII Countdown
 
-When you start a timer, Pomo displays an ASCII art countdown in your terminal.
-This visual representation helps you stay aware of the time remaining in your
-current work or break session without being overly distracting.
+When you start a timer, Pomo displays an ASCII art
+countdown in your terminal. This visual representation
+helps you stay aware of the time remaining in your
+current work or break session without being overly
+distracting.
 
 Example:
 
@@ -44,15 +45,17 @@ Example:
 
 ## Contributing
 
-Contributions are welcome! Please feel free to submit a Pull Request.
+Contributions are welcome! Please feel free to submit
+a Pull Request.
 
 ## Development
 
 To set up the development environment:
 
-1. Clone the repository `git clone https://github.com/yourusername/pomo.git` 2.
-   Navigate to the project directory `cd pomo` 3. Install dependencies `go mod
-tidy`
+1. Clone the repository `git clone
+https://github.com/yourusername/pomo.git` 2. Navigate
+   to the project directory `cd pomo` 3. Install
+   dependencies `go mod tidy`
 
 ## Future Enhancements
 
@@ -62,9 +65,11 @@ tidy`
 
 ## License
 
-This project is open source and available under the [MIT License](LICENSE).
+This project is open source and available under the
+[MIT License](LICENSE).
 
 ## Acknowledgments
 
-- Inspired by the Pomodoro Technique developed by Francesco Cirillo
+- Inspired by the Pomodoro Technique developed by
+  Francesco Cirillo
 - Built with Go

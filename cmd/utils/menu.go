@@ -9,8 +9,6 @@ func DisplayMenu(opt int) {
 		"Start a new timer",
 		"Load scheduler.",
 		"Edit scheduler.",
-		"See your logs.",
-		"Analysis",
 		"Exit",
 	}
 	os.Stdout.Write([]byte("\033[2J\033[H\r\n"))

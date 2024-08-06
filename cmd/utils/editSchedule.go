@@ -2,8 +2,8 @@ package utils
 
 import (
 	"encoding/json"
-	"github.com/Stan-breaks/pomo/cmd/models"
-	"github.com/Stan-breaks/pomo/cmd/routes"
+	"github.com/Stan-breaks/pomodoro/cmd/models"
+	"github.com/Stan-breaks/pomodoro/cmd/routes"
 	"os"
 )
 
