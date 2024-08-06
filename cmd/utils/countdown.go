@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"github.com/Stan-breaks/pomodoro/cmd/models"
 	"os"
+	"path/filepath"
 	"strconv"
 	"strings"
 	"time"
@@ -16,7 +17,7 @@ func Count(countDown models.CountDown) {
 	ticker := time.NewTicker(1 * time.Second)
 	defer ticker.Stop()
 	totalSeconds := (countDown.Minutes * 60) + countDown.Seconds
-	logFile := "/home/stan/projects/goProjects/pomodoro/test.log"
+	logFile := filepath.Join(os.Getenv("HOME"), ".config/pomodoro/logs.log")
 	startLog := models.Log{
 		Filepath: logFile,
 		Message:  countDown.Message + " started",

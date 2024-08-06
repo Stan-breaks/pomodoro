@@ -2,13 +2,15 @@ package utils
 
 import (
 	"encoding/json"
-	"github.com/Stan-breaks/pomodoro/cmd/models"
 	"os"
+	"path/filepath"
 	"time"
+
+	"github.com/Stan-breaks/pomodoro/cmd/models"
 )
 
 func LoadSchedule() {
-	customizeFile := "/home/stan/projects/goProjects/pomodoro/customise.json"
+	customizeFile := filepath.Join(os.Getenv("HOME"), ".config/pomodoro/custom.json")
 	data, err := os.ReadFile(customizeFile)
 	if err != nil {
 		os.Stdout.Write([]byte("\033[H\033[2J\r\n"))
