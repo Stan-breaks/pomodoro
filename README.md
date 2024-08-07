@@ -16,8 +16,7 @@ Run the following command in your terminal:
 
 `pomo`
 
-Use the arrow keys to navigate the menu and press
-Enter to select an option.
+Use the arrow keys to navigate the menu and press Enter to select an option.
 
 ## Menu Options
 
@@ -28,40 +27,35 @@ Enter to select an option.
 
 ## ASCII Countdown
 
-When you start a timer, Pomo displays an ASCII art
-countdown in your terminal. This visual representation
-helps you stay aware of the time remaining in your
-current work or break session without being overly
-distracting.
+When you start a timer, Pomo displays an ASCII art countdown in your terminal.
+This visual representation helps you stay aware of the time remaining in your
+current work or break session without being overly distracting.
 
 ## Contributing
 
-Contributions are welcome! Please feel free to submit
-a Pull Request.
+Contributions are welcome! Please feel free to submit a Pull Request.
 
 ### Installation
 
 clone this repo
 
-```bash
-git clone https://github.com/Stan-breaks/pomodoro
-```
+`bash git clone https://github.com/Stan-breaks/pomodoro `
 
 You can view the install script contents
 
-```bash
-cat install.sh
-```
+`bash cat install.sh `
 
 Run the script to install
 
-```bash
-./install.sh
-```
+`bash ./install.sh `
 
 ### !Disclaimer
 
 This is only working on linux
+
+### How to use
+
+in Edit the schedule first add to the list for the first item
 
 ## Future Enhancements
 
@@ -72,12 +66,10 @@ This is only working on linux
 
 ## License
 
-This project is open source and available under the
-[MIT License](LICENSE).
+This project is open source and available under the [MIT License](LICENSE).
 
 ## Acknowledgments
 
 - Inspired by the app timetome app in Fdroid
-- Inspired by the Pomodoro Technique developed by
-  Francesco Cirillo
+- Inspired by the Pomodoro Technique developed by Francesco Cirillo
 - Built with Go
