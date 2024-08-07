@@ -1,9 +1,6 @@
 # Pomo - Your Pomodoro Scheduler
 
-<video width="320" height="240" controls>
-  <source src="https://www.youtube.com/watch?v=XYvAOHmyAeE" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+https://www.youtube.com/watch?v=XYvAOHmyAeE
 
 Pomo is an open-source command-line tool designed to help you manage your time
 effectively using the Pomodoro Technique. This side project provides a simple,
