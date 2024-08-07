@@ -24,6 +24,7 @@ func LoadSchedule() {
 		os.Stdout.Write([]byte("Error occurred with custom schedule \r\n"))
 		return
 	}
+
 	for _, item := range items {
 		currentTime := time.Now()
 		countDown := models.CountDown{
@@ -33,5 +34,13 @@ func LoadSchedule() {
 			Date:    currentTime.Format("2006-01-02 15:04:05"),
 		}
 		Count(countDown)
+		currentTime = time.Now()
+		breakCount := models.CountDown{
+			Message: "Break",
+			Minutes: 5,
+			Seconds: 0,
+			Date:    currentTime.Format("2006-01-02 15:04:05"),
+		}
+		Count(breakCount)
 	}
 }
