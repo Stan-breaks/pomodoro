@@ -10,7 +10,7 @@ import (
 )
 
 func LoadSchedule() {
-	customizeFile := filepath.Join(os.Getenv("HOME"), ".config/pomodoro/custom.json")
+	customizeFile := filepath.Join(os.Getenv("HOME"), ".config", "pomodoro", "custom.json")
 	data, err := os.ReadFile(customizeFile)
 	if err != nil {
 		os.Stdout.Write([]byte("\033[H\033[2J\r\n"))
